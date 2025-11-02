@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODURBA — Kontakt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a href="index.html"><img class="logo" src="assets/logo.png" alt="MODURBA logo" width="160"></a>
+      <div class="brand"><h1>Kontakt</h1><p class="tagline">Odeślij zapytanie — odpowiemy w 24h</p></div>
+      <nav class="nav"><a href="index.html">Start</a><a href="galeria.html">Galeria</a></nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container form">
+      <form action="https://formsubmit.co/modurba.biuro@gmail.com" method="POST">
+        <!-- formsubmit options -->
+        <input type="hidden" name="_subject" value="Zapytanie ze strony MODURBA">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://example.com/thanks.html">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display:none">
+        <div class="row">
+          <div>
+            <label for="name">Imię i nazwisko</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+          <div>
+            <label for="company">Firma</label>
+            <input id="company" name="company" type="text">
+          </div>
+        </div>
+        <div>
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" required placeholder="Opisz krótko zakres (np. ławki 10 szt., RAL 7016, montaż z dostawą)…"></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn" type="submit">Wyślij zapytanie</button>
+          <p class="note">Lub napisz bezpośrednio: <a href="mailto:modurba.biuro@gmail.com">modurba.biuro@gmail.com</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="small">© <span id="year"></span> MODURBA.</div>
+      <div class="small eco">🌿 Dbajmy o środowisko – drukuj tylko, gdy to niezbędne.</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

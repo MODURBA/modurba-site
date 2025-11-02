@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODURBA — mała architektura</title>
+  <meta name="description" content="MODURBA — nowoczesna mała architektura: ławki, stojaki rowerowe, wiaty. Made in Poland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a href="/"><img class="logo" src="assets/logo.png" alt="MODURBA logo" width="180"></a>
+      <div class="brand">
+        <h1>MODURBA</h1>
+        <p class="tagline">Shaping the modern landscape · Made in Poland</p>
+      </div>
+      <nav class="nav">
+        <a href="#o-nas">O nas</a>
+        <a href="#produkty">Produkty</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Nowoczesna mała architektura</h2>
+      <p>Trwałe konstrukcje stalowe i drewniane: ławki, stojaki rowerowe, wiaty. Projektujemy i produkujemy w Polsce.</p>
+      <a class="btn" href="kontakt.html">Zapytaj o ofertę</a>
+    </div>
+  </section>
+
+  <section id="o-nas" class="section">
+    <div class="container two-col">
+      <div>
+        <h3>O nas</h3>
+        <p>MODURBA to zespół inżynierów i projektantów tworzących funkcjonalne, estetyczne i odporne elementy małej architektury. Łączymy stal, drewno i precyzję wykonania, aby tworzyć produkty, które służą latami.</p>
+        <ul class="ticks">
+          <li>Stal S235/S355, malowanie proszkowe (np. RAL 7016/7026)</li>
+          <li>Ergonomia, modułowość i łatwy montaż</li>
+          <li>Krótki lead-time i wsparcie projektowe</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Made in Poland</h4>
+        <p>Produkcja i montaż w Polsce. Dostawy w całej UE i na Bliski Wschód.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="produkty" class="section alt">
+    <div class="container">
+      <h3>Produkty (wybrane)</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Ławka — moduł „LEGO”</h4>
+          <p>Modułowa ławka z profili stalowych i desek. Różne długości i kolory RAL.</p>
+        </div>
+        <div class="card">
+          <h4>Stojak rowerowy</h4>
+          <p>Kompaktowy stojak na 5–10 rowerów, ocynk + malowanie proszkowe.</p>
+        </div>
+        <div class="card">
+          <h4>Wiata miejska</h4>
+          <p>Segmentowa konstrukcja, odporna na warunki atmosferyczne.</p>
+        </div>
+      </div>
+      <div class="gallery-actions" style="margin-top:14px;">
+        <a class="button" href="galeria.html">Zobacz galerię renderów</a>
+        <a class="button" href="KATALOG_MODURBA.pdf" target="_blank">Pobierz katalog (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="year"></span> MODURBA. Wszelkie prawa zastrzeżone.
+      </div>
+      <div class="small eco">🌿 Dbajmy o środowisko – drukuj tylko, gdy to niezbędne.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
